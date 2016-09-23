@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  path: MyString
+  media_type: MyString
+  user_id: 
+  micropost_id: 
+
+two:
+  path: MyString
+  media_type: MyString
+  user_id: 
+  micropost_id: 

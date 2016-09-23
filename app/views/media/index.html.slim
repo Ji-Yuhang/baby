@@ -1,0 +1,27 @@
+h1 Listing media
+
+table
+  thead
+    tr
+      th Path
+      th Media type
+      th User
+      th Micropost
+      th
+      th
+      th
+
+  tbody
+    - @media.each do |medium|
+      tr
+        td = medium.path
+        td = medium.media_type
+        td = medium.user
+        td = medium.micropost
+        td = link_to 'Show', medium
+        td = link_to 'Edit', edit_medium_path(medium)
+        td = link_to 'Destroy', medium, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Medium', new_medium_path
