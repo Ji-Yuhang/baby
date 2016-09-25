@@ -1,4 +1,9 @@
-source 'https://rubygems.org'
+if ENV["RUBYCHINA"]
+  source 'https://gems.ruby-china.org'
+else
+  source 'https://rubygems.org'
+end
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
